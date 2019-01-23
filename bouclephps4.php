@@ -48,3 +48,21 @@ $array3 = array();
 echo "<pre>";
 print_r($array3);
 echo "</pre>";
+
+//Exercice 5
+
+$moyennedevweb = 0;
+$moyennedevlo = 0;
+$countdevweb = 0;
+$countdevlo = 0;
+
+foreach ($students as $key => $value) {
+  if ($value['classe'] == "devweb") {
+    $moyennedevweb = $moyennedevweb + $value['note'];
+    $countdevweb = $countdevweb + 1;
+  }
+}
+
+echo 'La somme total des notes de la classe est '.$moyennedevweb.'<br>';
+echo 'Il y a '.$countdevweb.' élèves'.'<br>';
+echo 'La moyenne de la classe est '.$moyennedevweb / $countdevweb;
