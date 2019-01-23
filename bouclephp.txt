@@ -7,29 +7,29 @@
 
   asort($array);
   foreach ($array as $pays => $capitale) {
-    echo 'Le pays '.$pays.' à pour capitale '.$capitale.'<br>';
+    echo 'Le pays '.$pays.' ï¿½ pour capitale '.$capitale.'<br>';
   }
 
 //Exercice 2
 
 asort($array);
   foreach ($array as $food => $price) {
-    echo 'Le produit : '.$food.' coûte '.$price.'<br>';
+    echo 'Le produit : '.$food.' coï¿½te '.$price.'<br>';
   }
 
 ksort($array);
   foreach ($array as $food => $price) {
-    echo 'Le produit : '.$food.' coûte '.$price.'<br>';
+    echo 'Le produit : '.$food.' coï¿½te '.$price.'<br>'; "lol"
   }
 
 arsort($array);
   foreach ($array as $food => $price) {
-    echo 'Le produit : '.$food.' coûte '.$price.'<br>';
+    echo 'Le produit : '.$food.' coï¿½te '.$price.'<br>';
   }
 
 krsort($array);
   foreach ($array as $food => $price) {
-    echo 'Le produit : '.$food.' coûte '.$price.'<br>';
+    echo 'Le produit : '.$food.' coï¿½te '.$price.'<br>';
   }
 
 // Exercice 4
@@ -93,7 +93,7 @@ for($i ; $i <= 5; $i++) {
   } echo '<br>';
 }
 
-ou autre manière de faire 
+ou autre maniï¿½re de faire
 
   $i = 5;
   for($i ; $i >= 0; $i--) {
@@ -161,5 +161,3 @@ foreach ($array as $value) {
 }
 
 echo 'Le chiffre manquant est '.$total;
-
-
