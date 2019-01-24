@@ -1,3 +1,4 @@
+<?php
 for ($i=0; $i < count($array); $i++) {
   if ( $max < $array[$i] ) {
     $max = $array[$i];
@@ -66,3 +67,30 @@ foreach ($students as $key => $value) {
 echo 'La somme total des notes de la classe est '.$moyennedevweb.'<br>';
 echo 'Il y a '.$countdevweb.' élèves'.'<br>';
 echo 'La moyenne de la classe est '.$moyennedevweb / $countdevweb;
+
+//Exercice 6
+
+$tab = array(2,5,12,3,1,24,50);
+$nb = count($tab);
+
+// Ce que la boucle doit faire, raisonnement à avoir
+$tmp = $tab[0]; // Je sauvegarde le 2
+$tab[0] = $tab[$nb-1]; // Je met 50 à la place de 2
+$tab[$nb-1] = $tmp // Je met le 2 à la place de 50
+
+$tmp = $tab[1]; // Je sauvegarde le 5
+$tab[1] = $tab[($nb-1)-1]; // Je met 24 à la place de 5
+$tab[($nb-1]-1) = $tmp // Je met le 5 à la place de 24
+
+$tmp = $tab[2]; // Je sauvegarde le 12
+$tab[1] = $tab[($nb-1)-2]; // Je met 1 à la place de 12
+$tab[($nb-1]-2) = $tmp; // Je met le 12 à la place de 1
+
+for ($i=0; $i <= $nb/2; $i++) {
+  $tmp = $tab[$i];
+  $tab[$i] = $tab[$nb-$i];
+  $tab[$nb-$i] = $tmp;
+}
+
+
+?>
